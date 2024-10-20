@@ -1,5 +1,5 @@
 var API =  (function(){
-    const BASE_URL = 'https://study.duyiedu.com';
+    const BASE_URL1 = 'https://study.duyiedu.com';
     const TOKEN_KEY = 'token';
     
     function get(path){
@@ -8,7 +8,7 @@ var API =  (function(){
         if(token){
             headers.authorization = `Bearer ${token}`
         }
-        return fetch(BASE_URL + path,{headers});
+        return fetch(BASE_URL1 + path,{headers});
     }
     
     function post(path , bodyObj){
@@ -19,7 +19,7 @@ var API =  (function(){
         if(token){
             headers.authorization = `Bearer ${token}`
         }
-        return fetch(BASE_URL + path,{method:'POST',headers,body:JSON.stringify(bodyObj)});
+        return fetch(BASE_URL1 + path,{method:'POST',headers,body:JSON.stringify(bodyObj)});
     }
     
     async function reg(userInfo){
