@@ -4,7 +4,7 @@
     const user = resp.data;
     if (!user) {
       alert('未登录或登录已过期，请重新登录');
-      location.href = './login.html';
+      location.href = BASE_URL+'/login.html';
       return;
     }
   
@@ -24,7 +24,7 @@
     // 注销事件
     doms.close.onclick = function () {
       API.loginOut();
-      location.href = './login.html';
+      location.href = BASE_URL+'/login.html';
     };
   
     // 加载历史记录
@@ -125,7 +125,7 @@
     // 给关闭的div注册点击事件
     doms.close.onclick = function () {
       API.loginOut(); // 退出登录
-      location.href = './login.html'; // 跳转到登录页
+      location.href = BASE_URL+'/login.html'; // 跳转到登录页
     };
   })();
   

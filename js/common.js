@@ -7,3 +7,5 @@ function $$(selector){
 function $$$(tagname){
     return document.createElement(tagname);
 }
+
+var BASE_URL = 'EasyTalk';
